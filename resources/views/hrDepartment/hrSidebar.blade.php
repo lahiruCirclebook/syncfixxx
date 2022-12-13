@@ -58,6 +58,12 @@
                         <span key="t-dashboards">Outside Labors Evaluation</span>
                     </a>
                 </li>
+                <li>
+                    <a href="{{ url('/studentView') }}" class="waves-effect bx-fade-right-hover">
+                        <i class="fa-solid fa-check"></i>
+                        <span key="t-dashboards">Students</span>
+                    </a>
+                </li>
 
 
             </ul>

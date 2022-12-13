@@ -6,6 +6,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\SupervisorController;
 use App\Http\Controllers\productionManagerController;
 use App\Http\Controllers\HrController;
+use App\Http\Controllers\StudentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -167,3 +168,11 @@ route::get('leaveRequestEmployees', [
     HrController::class,
     'leaveRequestEmployees',
 ]);
+
+
+
+//student
+route::get('/studentView', [StudentController::class, 'studentView']);
+Route::post('/newStudent', [StudentController::class, 'addStudent']);
+Route::post('/editStudent', [StudentController::class, 'editStudent']);
+route::get('/deleteStudent{studentId}', [StudentController::class, 'deleteStudent']);
